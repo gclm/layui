@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>layui 第三方组件平台</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="layui插件,layui组件,layui扩展">
+    <meta name="description" content="layui 扩展组件平台用于收集来自 layui 官方以外的组件，由开发者自己维护。平台的目的是为了释放 layui 官方原创组件的压力，将更具想象力的组件生态开放给社区，让那些有能力有兴趣的开发者也能参与进来，共同完善 layui！">
+    <link rel="stylesheet" href="../../t/font_24081_60slu02pimt.css">
+    <link rel="stylesheet" href="../../layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../static/css/fly/global.css">
+    <link rel="stylesheet" href="../../static/css/global.css">
+</head>
+
+<body>
+    <div class="layui-header header header-extends" style="background-color: #24262F;">
+        <div class="layui-container">
+            <a class="logo" href="../../index.html"> <img src="../../static/images/layui/logo.png" alt="layui"> </a>
+            <div class="layui-form component" lay-filter="LAY-site-header-component"></div>
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-hide-xs"> <a href="../../index.html">框架</a> </li>
+                <li class="layui-nav-item layui-hide-xs layui-this"> <a href="../index.html">扩展</a> </li>
+                <li class="layui-nav-item"> <a href="javascript:;">周边</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../alone.html" target="_blank">独立组件</a> </dd>
+                        <dd class="layui-hide-sm layui-show-xs" lay-unselect=""> <a href="../index.html">扩展组件</a>
+                            <hr>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"> <a href="javascript:;">专区</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../user/login/index.html">layuiAdmin</a>
+                            <hr>
+                        </dd>
+                        <dd lay-unselect=""> <a href="../../user/login/index1.html" target="_blank">LayIM</a> </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="iconfont icon-touxiang" href="../../user/login/index2.html"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--[if lt IE 9]>  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <div class="fly-extend-banner">
+        <div class="layui-carousel" id="FLY-extend-banner" data-height="400px">
+            <div carousel-item="">
+                <div style="background-image: url(../../upload/2018_8/168_1535351333114_70495.jpg)">
+                    <div></div>
+                </div>
+                <div style="background-image: url(../../upload/2018_8/168_1535351313735_71033.jpg)">
+                    <div style="background-color: rgba(0,0,0,.5)">
+                        <a href="../../layuiadmin/index.html" target="_blank" class="fly-extend-banner-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="fly-extend-banner-title">layui 第三方组件平台</h1>
+        <form action="/extend/search.html" class="fly-extend-banner-search">
+            <div class="layui-inline"> <input placeholder="搜索 layui 第三方组件" name="kws" autocomplete="off" value="" class="layui-input"> </div><button class="layui-btn"><i
+                    class="layui-icon layui-icon-search"></i></button>
+        </form>
+        <div class="fly-extend-banner-release"> <a href="../index.html" class="layui-btn layui-btn-lg">返回首页</a> <a href="../../user/login/index3.html" class="layui-btn layui-btn-lg">发布组件</a> </div>
+    </div>
+    <div class="layui-container">
+        <div class="layui-tab layui-tab-brief fly-extend-tabs">
+            <ul class="layui-tab-title">
+                <li> <a href="../index.html">按最新</a> </li>
+                <li class="layui-this"> <a href="">按人气</a> </li>
+            </ul>
+        </div>
+        <ul class="layui-row layui-col-space30">
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../sliderVerify/index.html"> sliderVerify
+                                滑块验证组件 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> sliderVerify </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/8436456/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">go**a</cite> <img src="../../avatar/8436456.png" alt="go**a"> </a>
+                        </div>
+                    </div>
+                    <a href="../sliderVerify/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>滑块解锁验证 ，此插件仅提供学习交流</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../eleTree/index.html"> eleTree 树组件 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> eleTree </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/21065688/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">凉宫</cite> <img src="../../avatar/21065688.jpg" alt="凉宫"> </a>
+                        </div>
+                    </div>
+                    <a href="../eleTree/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>包括tree的下拉，checkbox，拖拽，右键菜单，手风琴，懒加载，搜索</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../formSelects/index.html"> formSelects 4.x
+                                多选框 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> formSelects </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/2196264/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">ma**i</cite> <img src="../../avatar/2196264.jpg" alt="ma**i"> </a>
+                        </div>
+                    </div>
+                    <a href="../formSelects/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>基于 layui 的 select 多选解决方案。支持：多选、分组、取值&amp;赋值、选择监听、搜索、启用&amp;禁用、多选皮肤、重复选、下拉方向、显示数量、选择数、 远程搜索、动态数据、动态创建、 搜索过滤 、快捷操作、选项模板 、多级联动等。</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../layedit/index.html"> kz.layedit 富文本编辑器拓展
+                            </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> layedit </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/9511488/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">Kn**Z</cite> <img src="../../qqapp/101235792/BBC3ADC633A0A42CA6B053B329FA99B5/100.jpg" alt="Kn**Z">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="../layedit/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>[v1.20.4.4]在原有layedit基础上新增 1.html源码模式 2.全屏 3.批量上传图片、插入视频 4.字体颜色、背景色设置、段落格式设置 5.插入表格 6.右键修改图片视频、段落居中格式、删除等功能 7.插入水平线hr 8.锚点 9.插入代码和插入超链接拓展 10.插入自定义链接 11.简单实现撤销重做【不推荐使用】</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../croppers/index.html"> cropper 图片截取（剪裁）上传
+                            </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> croppers </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/16087680/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">ad**f</cite> <img src="../../images/fly/avatar/3.jpg" alt="ad**f"> </a>
+                        </div>
+                    </div>
+                    <a href="../croppers/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>基于layui，根据cropper修改的图片截取（剪裁）上传插件，适用于头像等图片上传。</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../notice/index.html"> notice 通知控件 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> notice </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/435288/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">误解</cite> <img src="../../qqapp/101235792/5E846E48E160F22216DB67D658E9F4E3/100.jpg" alt="误解"> </a>
+                        </div>
+                    </div>
+                    <a href="../notice/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>1. 此控件是基于 layui 的 notice 通知控件，可用于美化消息通知；2. 控件支持响应式。算是对 layer 的一个小扩展，刚好公司项目用到，自己就造了个轮子</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../Magnifier/index.html"> Magnifier 放大镜 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> Magnifier </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/3387720/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">流年**室</cite> <img src="../../qqapp/101235792/281A38368D597B1BC751EEE8DC3F2B5E/100.jpg" alt="流年**室">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="../Magnifier/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>用于图片的放大镜效果</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../dtree/index.html"> dtree 树形组件 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> dtree </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/12661320/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">智慧**瓜</cite> <img src="../../avatar/12661320.jpg" alt="智慧**瓜"> </a>
+                        </div>
+                    </div>
+                    <a href="../dtree/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>核心功能：异步加载、数据格式自定义、复选框、菜单栏、工具栏、iframe加载、下拉树、定制化换肤。</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../treeTable/index.html"> treeTable 树形表格 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> treeTable </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/2610384/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">狠狠**口</cite> <img src="../../avatar/2610384.jpg" alt="狠狠**口"> </a>
+                        </div>
+                    </div>
+                    <a href="../treeTable/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>树、树表展开关闭及一些常用功能。加入了状态记忆、渲染、刷新、更换图标、列渲染等配置。并设置一些监听、获取参数快捷操作。并在示例中扩展了下拉选择（单选、多选）功能。</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../treeSelect/index.html"> treeSelect 树形下拉选择器
+                            </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> treeSelect </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/3200064/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">无求**丶</cite> <img src="../../avatar/3200064.png" alt="无求**丶"> </a>
+                        </div>
+                    </div>
+                    <a href="../treeSelect/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p> https://wujiawei0926.gitee.io/treeselect/ 基于 layui和ztree 的树形下拉选择器，支持异步加载，提供点击回调和加载完成后的回调，支持搜索、占位符修改、手动选中节点以及刷新树结构，更多功能参见详细介绍。</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../treeGrid/index.html"> treeGrid 树形表格 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> treeGrid </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/2529912/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">易</cite> <img src="../../qqapp/101235792/2207970FC3E44C5213412C539FDFFEBB/100.jpg" alt="易"> </a>
+                        </div>
+                    </div>
+                    <a href="../treeGrid/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>得益于 layui 良好的设计，可以顺利扩展 treeGrid 插件。支持树状表格、支持折叠记忆功能、支持动态新增行、支持动态删除行、支持行内过滤，支持方法式打开或折叠任意节点等等。内部对原来table的渲染方法进行了拆分，以便更精准控制table的行为。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../xmSelect/index.html"> xmSelect下拉多选 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> xmSelect </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/2196264/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">ma**i</cite> <img src="../../avatar/2196264.jpg" alt="ma**i"> </a>
+                        </div>
+                    </div>
+                    <a href="../xmSelect/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>下拉多选解决方案 1.多选, 单选, 重复选 2.分组, 远程搜索, 本地搜索, 分页 3.自定义主题, 工具条 4.下拉树，下拉任意 ... 让下拉选择变成一种艺术^_^
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../excel/index.html"> 扩展 layui 的导出插件
+                                layui.excel </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> excel </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/11634672/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">藏锋**丨</cite> <img src="../../qqapp/101235792/905B6DB06066DB844F6F30D4E770668F/100.jpg" alt="藏锋**丨">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="../excel/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>现有Excel操作前端库中，XLSX.JS功能强大但是操作颇为不便，于是封装了此插件，依赖jQuery，支持Layui插件形式加载，导出仅需一句话。 导出excel功能基于 XLSX.js，下载功能基于 FileSaver，读取文件基于 H5的 FileReader。</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../tableSelect/index.html"> tableSelect
+                                下拉表格选择器 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> tableSelect </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/12559680/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">sa**8</cite> <img src="../../avatar/12559680.jpg" alt="sa**8"> </a>
+                        </div>
+                    </div>
+                    <a href="../tableSelect/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>用于庞大数据选择，支持 layui 原生 table 组件的所有功能/自定义关键词搜索/双击选择/默认赋值/分页选中</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../selectN,selectM/index.html"> select
+                                多选和无限级联动 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> selectN,selectM </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/3001992/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">番茄</cite> <img src="../../crop.49.48.124.124.180/719deedejw8f7e6dnvx0ej2068066jrj.jpg" alt="番茄">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="../selectN,selectM/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>selectM.js 多选插件 selectN.js 无限级插件（json数据与layui-tree结构一致）</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../selectplus/index.html"> selectplus 加强版下拉框
+                            </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> selectplus </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/11631480/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">一片**叶</cite> <img src="../../qqapp/101235792/98CE08A63EC012514A375C53A567FBA2/100.jpg" alt="一片**叶">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="../selectplus/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>基于layui框架的下拉框加强版，初始版本具备基础数据展现、异步加载、数据回调、异步返回数据自定义、默认选项等功能，支持单选和多选。内部使用 form 和 jQuery 模块。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../soulTable/index.html"> soulTable
+                                表格筛选、列拖动、子表、excel导出 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> soulTable </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/8265936/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">叶落**阁</cite> <img src="../../avatar/8265936.jpg" alt="叶落**阁"> </a>
+                        </div>
+                    </div>
+                    <a href="../soulTable/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>功能点： 1. 表头筛选、自定义条件（支持前台筛选、后台筛选[mysql|oracle]） 2. 拖动列调整顺序、隐藏显示列 3. excel导出（根据筛选条件和列顺序导出） 4. 子表（表中表、无限层级、子表同样支持前3个功能）</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../authtree/index.html"> authtree 无限级权限控制树
+                            </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> authtree </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/11634672/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">藏锋**丨</cite> <img src="../../qqapp/101235792/905B6DB06066DB844F6F30D4E770668F/100.jpg" alt="藏锋**丨">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="../authtree/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>layui 自身提供一个 tree 树形菜单，但是并不适用于权限控制中，比如：当我需要选择用户组的权限（树形结构），需要使用 form 提交用户所选权限数据的时候。</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../multiSelect/index.html"> multiSelect 多选
+                            </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> multiSelect </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/2610384/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">狠狠**口</cite> <img src="../../avatar/2610384.jpg" alt="狠狠**口"> </a>
+                        </div>
+                    </div>
+                    <a href="../multiSelect/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>只需use的时候加载模块名即可，不动源代码，简单实用</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="../autocomplete/index.html"> 文本自动填充 </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> autocomplete </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/6194664/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">Ri**n</cite> <img src="../../qqapp/101235792/3388DFDB3633BEBC93B536DCA681FB97/100.jpg" alt="Ri**n">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="../autocomplete/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>在输入框输入文本时，下拉框会对文本自动填充。</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <div style="padding: 30px 0;">
+            <div style="text-align: center;">
+                <div class="laypage-main"><span class="laypage-curr">1</span><a href="hot/page/2/index.html">2</a><a href="hot/page/3/index.html">3</a><a href="hot/page/4/index.html">4</a><a href="hot/page/5/index.html">5</a><span>…</span><a href="hot/page/7/index.html" class="laypage-last"
+                        title="尾页">尾页</a><a href="hot/page/2/index.html" class="laypage-next">下一页</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="fly-footer"></div>
+    </div>
+    <script src="../../layui/dist/layui.js"></script>
+    <script>
+        layui.cache.page = 'extends';
+        layui.cache.user = {
+            username: '游客',
+            uid: -1,
+            avatar: '../static/images/fly/avatar/default.png',
+            experience: 0,
+            sum: 0,
+            vip: 0,
+            sex: ''
+        };
+        layui.config({
+            version: "111"
+        }).extend({
+            'fly': '../static/lay/modules/fly/index'
+        }).use('fly');
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+
+</html>

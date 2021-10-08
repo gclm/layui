@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>timeago：转换时间为&quot;xx时间前&quot; timeago - layui 第三方组件平台</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="timeago.js 是一个非常简洁、轻量级、不到 1kb 的很简洁的 Javascript 库，用来将 datetime 时间转化成类似于*** 时间前的描述字符串，例如：“3 小时前”。">
+    <link rel="stylesheet" href="../../t/font_24081_60slu02pimt.css">
+    <link rel="stylesheet" href="../../layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../static/css/fly/global.css">
+    <link rel="stylesheet" href="../../static/css/global.css">
+</head>
+
+<body>
+    <div class="layui-header header header-extends" style="background-color: #24262F;">
+        <div class="layui-container">
+            <a class="logo" href="../../index.html"> <img src="../../static/images/layui/logo.png" alt="layui"> </a>
+            <div class="layui-form component" lay-filter="LAY-site-header-component"></div>
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-hide-xs"> <a href="../../index.html">框架</a> </li>
+                <li class="layui-nav-item layui-hide-xs layui-this"> <a href="../index.html">扩展</a> </li>
+                <li class="layui-nav-item"> <a href="javascript:;">周边</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../alone.html" target="_blank">独立组件</a> </dd>
+                        <dd class="layui-hide-sm layui-show-xs" lay-unselect=""> <a href="../index.html">扩展组件</a>
+                            <hr>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"> <a href="javascript:;">专区</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../user/login/index.html">layuiAdmin</a>
+                            <hr>
+                        </dd>
+                        <dd lay-unselect=""> <a href="../../user/login/index1.html" target="_blank">LayIM</a> </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="iconfont icon-touxiang" href="../../user/login/index2.html"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--[if lt IE 9]>  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <div class="fly-extend-banner fly-extend-banner-sm">
+        <div class="layui-carousel" id="FLY-extend-banner" data-height="200px">
+            <div carousel-item="">
+                <div style="background-image: url(../../upload/2018_8/168_1535373858670_8825.jpg)">
+                    <div style="background: rgba(0,0,0,.6)"></div>
+                </div>
+            </div>
+        </div>
+        <h1 class="fly-extend-banner-title">layui 第三方组件平台</h1>
+        <div class="fly-extend-banner-release"> <a href="../index.html" class="layui-btn layui-btn-lg">返回首页</a> <a href="../../user/login/index3.html" class="layui-btn layui-btn-lg">发布组件</a> </div>
+    </div>
+    <div class="fly-extend-detail layui-card">
+        <div class="layui-container">
+            <div class="fly-extend-list-header">
+                <h1 class="fly-extend-title layui-elip"> <a>timeago：转换时间为&quot;xx时间前&quot;</a> <span class="layui-badge layui-bg-green layui-hide-xs">timeago</span> </h1>
+                <div class="fly-extend-list-info">
+                    <a href="https://fly.layui.com/u/3200064" target="_blank" class="fly-extend-list-user" title="发布者"> <cite class="layui-hide-xs">无求**丶</cite> <img src="../../avatar/3200064.png" alt="无求**丶"> </a>
+                </div>
+            </div>
+            <blockquote class="fly-extend-list-desc layui-elem-quote">
+                <p>timeago.js 是一个非常简洁、轻量级、不到 1kb 的很简洁的 Javascript 库，用来将 datetime 时间转化成类似于*** 时间前的描述字符串，例如：“3 小时前”。</p>
+            </blockquote>
+            <div class="fly-extend-list-bottom"> <span class="layui-inline">更新：2019-8-26 </span> <span class="layui-inline">创建：2019-8-30 </span>
+                <div class="layui-btn-container layui-extend-doc-edit"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-container">
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-sm3 layui-col-md2">
+                <div class="layui-card">
+                    <ul class="fly-extend-doc-nav" lay-filter="extend-doc-nav">
+                        <li class="layui-this" lay-id="doc"> <a href="javascript:;"><i
+                                    class="iconfont icon-wendang"></i> 文档</a> </li>
+                        <li lay-id="download"> <a href="javascript:;"><i class="iconfont icon-xiazai"></i> 下载</a> </li>
+                        <li lay-id="">
+                            <a href="https://timeago.org/" rel="nofollow" target="_blank"> <i class="iconfont icon-kaifashili"></i> 来源 </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layui-col-sm9 layui-col-md10">
+                <div class="layui-card fly-extend-doc layui-show">
+                    <div class="layui-card-header">
+                        <h3 class="layui-inline layui-this">文档</h3>
+                    </div>
+                    <div class="layui-card-body detail-body photos layui-text">
+                        封装自https://github.com/hustcc/timeago.js/blob/master/README_zh.md<br><br>
+                        <div class="layui-elem-quote"> timeago.js 是一个非常简洁、轻量级、不到 1kb 的很简洁的 Javascript 库，用来将 datetime 时间转化成类似于*** 时间前的描述字符串，例如：“3 小时前”。</div>- 本地化支持，默认自带中文和英文语言，基本够用；<br>- 之前 xxx 时间前、xxx 时间后；
+                        <br>- 支持自动实时更新；<br> <br>示例：<br>
+                        <pre>刚刚<br>12 秒前<br>3 分钟前<br>2 小时前<br>4 天前<br>3 周前<br>6 个月前<br>3 年前<br><br>12 秒后<br>3 分钟后<br>2 小时后<br>24 天后<br>6 个月后<br>3 年后</pre>
+                        <br><br>如何使用：<br>
+                        <pre>&lt;span class=&quot;timeago&quot; datetime=&quot;2016-06-30 09:20:00&quot;&gt;&lt;/span&gt;</pre>
+                        <pre>layui.config({<br>    version: true,<br>    base:  &#39;assets/module/&#39;<br>}).extend({<br>    timeago: &#39;timeago&#39;<br>}).use([&#39;timeago&#39;], function () {<br>   var $ = layui.jquery; <br>   var timeago = layui.timeago;<br>   timeago.render($(&#39;.timeago&#39;));<br>});</pre>
+                        <br>更多使用方法：<br>- 点击查看原插件中文文档：<a href="https://github.com/hustcc/timeago.js/blob/master/README_zh.md" target="_blank" rel="nofollow">https://github.com/hustcc/timeago.js/blob/master/README_zh.md</a> <br>-
+                        render() 函数的输入必须是一个 dom 元素或者数组，JavaScript dom 和 JQuery 的 dom 均支持。<br>- cancel() 清除实时渲染，如果传入 dom，则清除这个 dom 的实时渲染，否则清除所有。 <br>- format() 格式化一个日期为字符串。<br><br>使用须知：<br>- 默认语言修改为中文（zh_CN）<br>- 没有导入除en和zh_CN以外的语言
+                        <br>
+                    </div>
+                </div>
+                <div class="layui-card fly-extend-doc">
+                    <div class="layui-card-header">
+                        <h3 class="layui-inline layui-this">下载</h3>
+                    </div>
+                    <div class="layui-card-body detail-body layui-text">
+                        <div class="layui-btn-container"> <a href="https://cdn.layui.com/extend/3200064_1566813292540_84739.zip" target="_blank" class="layui-btn layui-btn-lg layui-btn-primary"> 立即下载 </a>
+                            <blockquote class="layui-elem-quote"> 该扩展组件由第三方用户主动投递，并由其自身进行维护，本站仅做收集。 </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fly-footer"></div>
+    </div>
+    <script src="../../layui/dist/layui.js"></script>
+    <script>
+        layui.cache.page = 'extends';
+        layui.cache.user = {
+            username: '游客',
+            uid: -1,
+            avatar: '../static/images/fly/avatar/default.png',
+            experience: 0,
+            sum: 0,
+            vip: 0,
+            sex: ''
+        };
+        layui.config({
+            version: "111"
+        }).extend({
+            'fly': '../static/lay/modules/fly/index'
+        }).use('fly');
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+
+</html>

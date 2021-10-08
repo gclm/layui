@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>tableTree 表格树 tableTree - layui 第三方组件平台</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="基于layui table做的表格树，支持异步请求，支持reload重新加载，支持sort排序排序、可异步请求后台获取数据后生成新的子叶节点，可编辑单元格等功能。">
+    <link rel="stylesheet" href="../../t/font_24081_60slu02pimt.css">
+    <link rel="stylesheet" href="../../layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../static/css/fly/global.css">
+    <link rel="stylesheet" href="../../static/css/global.css">
+</head>
+
+<body>
+    <div class="layui-header header header-extends" style="background-color: #24262F;">
+        <div class="layui-container">
+            <a class="logo" href="../../index.html"> <img src="../../static/images/layui/logo.png" alt="layui"> </a>
+            <div class="layui-form component" lay-filter="LAY-site-header-component"></div>
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-hide-xs"> <a href="../../index.html">框架</a> </li>
+                <li class="layui-nav-item layui-hide-xs layui-this"> <a href="../index.html">扩展</a> </li>
+                <li class="layui-nav-item"> <a href="javascript:;">周边</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../alone.html" target="_blank">独立组件</a> </dd>
+                        <dd class="layui-hide-sm layui-show-xs" lay-unselect=""> <a href="../index.html">扩展组件</a>
+                            <hr>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"> <a href="javascript:;">专区</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../user/login/index.html">layuiAdmin</a>
+                            <hr>
+                        </dd>
+                        <dd lay-unselect=""> <a href="../../user/login/index1.html" target="_blank">LayIM</a> </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="iconfont icon-touxiang" href="../../user/login/index2.html"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--[if lt IE 9]>  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <div class="fly-extend-banner fly-extend-banner-sm">
+        <div class="layui-carousel" id="FLY-extend-banner" data-height="200px">
+            <div carousel-item="">
+                <div style="background-image: url(../../upload/2018_8/168_1535373858670_8825.jpg)">
+                    <div style="background: rgba(0,0,0,.6)"></div>
+                </div>
+            </div>
+        </div>
+        <h1 class="fly-extend-banner-title">layui 第三方组件平台</h1>
+        <div class="fly-extend-banner-release"> <a href="../index.html" class="layui-btn layui-btn-lg">返回首页</a> <a href="../../user/login/index3.html" class="layui-btn layui-btn-lg">发布组件</a> </div>
+    </div>
+    <div class="fly-extend-detail layui-card">
+        <div class="layui-container">
+            <div class="fly-extend-list-header">
+                <h1 class="fly-extend-title layui-elip"> <a>tableTree 表格树</a> <span class="layui-badge layui-bg-green layui-hide-xs">tableTree</span> </h1>
+                <div class="fly-extend-list-info">
+                    <a href="https://fly.layui.com/u/34742904" target="_blank" class="fly-extend-list-user" title="发布者"> <cite class="layui-hide-xs">单身**8</cite> <img src="../../g1.jpg" alt="单身**8"> </a>
+                </div>
+            </div>
+            <blockquote class="fly-extend-list-desc layui-elem-quote">
+                <p>基于layui table做的表格树，支持异步请求，支持reload重新加载，支持sort排序排序、可异步请求后台获取数据后生成新的子叶节点，可编辑单元格等功能。</p>
+            </blockquote>
+            <div class="fly-extend-list-bottom"> <span class="layui-inline">创建：2020-6-8 </span>
+                <div class="layui-btn-container layui-extend-doc-edit"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-container">
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-sm3 layui-col-md2">
+                <div class="layui-card">
+                    <ul class="fly-extend-doc-nav" lay-filter="extend-doc-nav">
+                        <li class="layui-this" lay-id="doc"> <a href="javascript:;"><i
+                                    class="iconfont icon-wendang"></i> 文档</a> </li>
+                        <li lay-id="download"> <a href="javascript:;"><i class="iconfont icon-xiazai"></i> 下载</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layui-col-sm9 layui-col-md10">
+                <div class="layui-card fly-extend-doc layui-show">
+                    <div class="layui-card-header">
+                        <h3 class="layui-inline layui-this">文档</h3>
+                    </div>
+                    <div class="layui-card-body detail-body photos layui-text"> 支持的操作<br>- 异步/同步加载 =&gt; layui table的加载
+                        <br>- 节点单元格动态小图标工具编辑、新增、删除和排序操作 =&gt; 增删改查<br>- 排序 =&gt; 全表排序、指定节点/节点id 排序<br>- 分页<br>- 指定节点或节点id删除节点及其叶子节点
+                        <br>- 叶子节点选中、上级节点自动选中、反之、自动清除选中<br>- 节点折叠记忆<br>- 重载<br>- 局部刷新<br>- 关键字检索及检索前折叠状态记忆
+                        <br>- 重置搜索前折叠状态<br>- 传参新增树形叶子节点、数据为空时，为空白节点<br>- 传参新增最上级节点<br>- 基于table tool事件进行aop增强，实现树形表格编辑、修改及下拉框和时间选择框的整合
+                        <br>- 指定节点或者节点id展开/关闭节点及其叶子节点<br>- 全部展开/折叠<br>- layui table api方式的操作<br>- 配置简单<br>- 小图标可自定义<br>- 节点id去重功能<br>- 无需额外的css样式<br><br>api<br><br>引入组件<br>
+                        <pre>    layui.config({<br>        base: &#39;module/&#39;<br>    }).extend({<br>        tableEdit:&#39;js/tableEdit&#39;  //表格树依赖我另外写的tableEdit模块，本项目就有。<br>        ,tableTree:&#39;js/tableTree&#39;<br>    }).use([&#39;table&#39;,&#39;tableEdit&#39;,&#39;layer&#39;,&quot;tableTree&quot;], function () {<br>        var table = layui.table<br>            ,tableEdit = layui.tableEdit<br>            ,tableTree = layui.tableTree;<br>    });</pre>
+                        <img src="../../upload/2020_5/34742904_1589972965615_5989.png"> <br><br><img src="../../upload/2020_5/34742904_1589972981268_65461.png"> <br><br><img src="../../upload/2020_5/34742904_1589972998922_77658.png"> <br><br><img src="../../upload/2020_5/34742904_1589973030758_14469.png">                        <br><br><img src="../../upload/2020_5/34742904_1589973056142_87500.png"> <br><br>效果图：<br><img src="../../upload/2020_5/34742904_1589973082464_68691.png">
+                    </div>
+                </div>
+                <div class="layui-card fly-extend-doc">
+                    <div class="layui-card-header">
+                        <h3 class="layui-inline layui-this">下载</h3>
+                    </div>
+                    <div class="layui-card-body detail-body layui-text">
+                        <div class="layui-btn-container"> <a href="https://cdn.layui.com/extend/34742904_1589709260830_43121.zip" target="_blank" class="layui-btn layui-btn-lg layui-btn-primary"> 立即下载 </a> <a href="https://gitee.com/yangqianlong98/tableTree"
+                                target="_blank" class="layui-btn layui-btn-lg layui-btn-primary layui-border-red"> 去码云下载
+                            </a>
+                            <blockquote class="layui-elem-quote"> 该扩展组件由第三方用户主动投递，并由其自身进行维护，本站仅做收集。 </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fly-footer"></div>
+    </div>
+    <script src="../../layui/dist/layui.js"></script>
+    <script>
+        layui.cache.page = 'extends';
+        layui.cache.user = {
+            username: '游客',
+            uid: -1,
+            avatar: '../static/images/fly/avatar/default.png',
+            experience: 0,
+            sum: 0,
+            vip: 0,
+            sex: ''
+        };
+        layui.config({
+            version: "111"
+        }).extend({
+            'fly': '../static/lay/modules/fly/index'
+        }).use('fly');
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+
+</html>

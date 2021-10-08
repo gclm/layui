@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>orgCharts 组织结构展示 orgCharts - layui 第三方组件平台</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="展示组织结构,包含自定义内容,点击事件">
+    <link rel="stylesheet" href="../../t/font_24081_60slu02pimt.css">
+    <link rel="stylesheet" href="../../layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../static/css/fly/global.css">
+    <link rel="stylesheet" href="../../static/css/global.css">
+</head>
+
+<body>
+    <div class="layui-header header header-extends" style="background-color: #24262F;">
+        <div class="layui-container">
+            <a class="logo" href="../../index.html"> <img src="../../static/images/layui/logo.png" alt="layui"> </a>
+            <div class="layui-form component" lay-filter="LAY-site-header-component"></div>
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-hide-xs"> <a href="../../index.html">框架</a> </li>
+                <li class="layui-nav-item layui-hide-xs layui-this"> <a href="../index.html">扩展</a> </li>
+                <li class="layui-nav-item"> <a href="javascript:;">周边</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../alone.html" target="_blank">独立组件</a> </dd>
+                        <dd class="layui-hide-sm layui-show-xs" lay-unselect=""> <a href="../index.html">扩展组件</a>
+                            <hr>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"> <a href="javascript:;">专区</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../user/login/index.html">layuiAdmin</a>
+                            <hr>
+                        </dd>
+                        <dd lay-unselect=""> <a href="../../user/login/index1.html" target="_blank">LayIM</a> </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="iconfont icon-touxiang" href="../../user/login/index2.html"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--[if lt IE 9]>  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <div class="fly-extend-banner fly-extend-banner-sm">
+        <div class="layui-carousel" id="FLY-extend-banner" data-height="200px">
+            <div carousel-item="">
+                <div style="background-image: url(../../upload/2018_8/168_1535373858670_8825.jpg)">
+                    <div style="background: rgba(0,0,0,.6)"></div>
+                </div>
+            </div>
+        </div>
+        <h1 class="fly-extend-banner-title">layui 第三方组件平台</h1>
+        <div class="fly-extend-banner-release"> <a href="../index.html" class="layui-btn layui-btn-lg">返回首页</a> <a href="../../user/login/index3.html" class="layui-btn layui-btn-lg">发布组件</a> </div>
+    </div>
+    <div class="fly-extend-detail layui-card">
+        <div class="layui-container">
+            <div class="fly-extend-list-header">
+                <h1 class="fly-extend-title layui-elip"> <a>orgCharts 组织结构展示</a> <span class="layui-badge layui-bg-green layui-hide-xs">orgCharts</span> </h1>
+                <div class="fly-extend-list-info">
+                    <a href="https://fly.layui.com/u/12614616" target="_blank" class="fly-extend-list-user" title="发布者"> <cite class="layui-hide-xs">愤怒**针</cite> <img src="../../qqapp/101235792/FB24F68B57F7ADE59DE7C526138A7352/100.jpg" alt="愤怒**针"> </a>
+                </div>
+            </div>
+            <blockquote class="fly-extend-list-desc layui-elem-quote">
+                <p>展示组织结构,包含自定义内容,点击事件</p>
+            </blockquote>
+            <div class="fly-extend-list-bottom"> <span class="layui-inline">更新：2018-12-20 </span> <span class="layui-inline">创建：2018-12-4 </span>
+                <div class="layui-btn-container layui-extend-doc-edit"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-container">
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-sm3 layui-col-md2">
+                <div class="layui-card">
+                    <ul class="fly-extend-doc-nav" lay-filter="extend-doc-nav">
+                        <li class="layui-this" lay-id="doc"> <a href="javascript:;"><i
+                                    class="iconfont icon-wendang"></i> 文档</a> </li>
+                        <li lay-id="download"> <a href="javascript:;"><i class="iconfont icon-xiazai"></i> 下载</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layui-col-sm9 layui-col-md10">
+                <div class="layui-card fly-extend-doc layui-show">
+                    <div class="layui-card-header">
+                        <h3 class="layui-inline layui-this">文档</h3>
+                    </div>
+                    <div class="layui-card-body detail-body photos layui-text"> <br><br>预览<br><img src="https://gitee.com/conesat/OrgCharts/raw/master/rec-image/rec.gif"> <br><br>最新版前往码云 <a href="https://gitee.com/conesat/OrgCharts" target="_blank" rel="nofollow">https://gitee.com/conesat/OrgCharts</a>                        <br> 用法<br>
+                        <pre>layui.config({<br>	base: &#39;../orgCharts/&#39; //配置 layui 第三方扩展组件存放的基础目录，一般放入 layui_exts 目录下<br>}).extend({<br>	orgCharts: &#39;orgCharts&#39;<br>}).use([&#39;orgCharts&#39;, &#39;jquery&#39;], function() {<br>	var orgCharts =new layui.orgCharts;<br>	var $ = layui.$;<br>	//初始化组件  <br>       orgCharts.init({<br>	        id: &quot;org_charts&quot;, //必填<br>		theme: &#39;&#39;, //可选<br>		menu:[&#39;edit&#39;,&#39;add&#39;,&#39;delete&#39;,&#39;cut&#39;,&#39;copy&#39;,&#39;absorbed&#39;],//右键菜单项<br>		success: function() { //可选<br>			//console.log(&quot;初始化完成&quot;)<br>		},<br>		error: function(e) { //可选<br>			//console.log(e);<br>		},<br>		onClick: function(el, data) { //点击方法  el被点击的元素  data对应传入数据<br>			//console.log(data.id);<br>			alert(&#39;点击了&#39; + data.name);<br>		},<br>		onAdd:function(data,tab){//添加回调 data为点击的数据  tab为标记点,用于插入新数据<br>			var myData=new Object();<br>			myData.name=prompt(&quot;输入name&quot;,&quot;新节点&quot;);<br>			myData.child=[];<br>			if(myData.name!=null){<br>				orgCharts.addNodes(myData,tab);<br>			}<br>		},<br>		onEdit:function(data){//编辑回调 data为点击的数据  tab为标记点,用于插入新数据<br>			data.html=prompt(&quot;输入name&quot;,data.html);<br>			if(data.name!=&quot;&quot;){<br>				orgCharts.draw();//重新绘制<br>			}<br>		}<br>	});           <br><br>	//加载方式1   <br>	/*<br>	orgCharts.drawByUrl({<br>		url: &#39;data/data.json&#39;, //必选  返回格式参考 data/data.json<br>		success: function() { //可选<br>			//console.log(&quot;绘制化完成&quot;);<br>		},<br>		error: function(e) { //可选<br>			//console.log(&#39;绘制失败&#39;);<br>		}<br>	});<br>	*/<br><br>	//加载方式2 <br><br>	$.ajax({      <br>		type: &quot;get&quot;,<br>		url: &quot;data/data.json&quot;,<br>		dataType: &quot;text&quot;,<br>		success: function(data) {<br>			var JSONData = JSON.parse(data);<br>			orgCharts.drawByData({<br>				data: JSONData.data, //必填json数据  格式请参照  data/data.json  中的data<br>				success: function() { //可选<br>					//console.log(&quot;绘制化完成&quot;);<br>				},<br>				error: function(e) { //可选<br>					//console.log(&#39;绘制失败&#39;);<br>				}<br>			});<br>		},<br>		error: function(msg) {}    <br>	});<br>	/*<br>	 * 设置主题  主题类型normal ,red ,green ,black ,gray<br>	 * 可自定义样式文件<br>	 * 类名格式如 <br>	 * node-my 节点样式<br>	 * vertical-line-my 竖线样式<br>	 * transverse-line-my 横线样式<br>	 * 详细参考my.style<br>	 * 该方法<br>	 */<br>	//Org.setTheme(&#39;gray&#39;);<br>	window.changeTheme = function(theme) {<br>		orgCharts.setTheme(theme);<br>	}<br>});</pre>
+                    </div>
+                </div>
+                <div class="layui-card fly-extend-doc">
+                    <div class="layui-card-header">
+                        <h3 class="layui-inline layui-this">下载</h3>
+                    </div>
+                    <div class="layui-card-body detail-body layui-text">
+                        <div class="layui-btn-container"> <a href="https://cdn.layui.com/extend/12614616_1545201014075_69026.rar" target="_blank" class="layui-btn layui-btn-lg layui-btn-primary"> 立即下载 </a> <a href="https://gitee.com/conesat/OrgCharts"
+                                target="_blank" class="layui-btn layui-btn-lg layui-btn-primary layui-border-red"> 去码云下载 </a> <a href="https://github.com/conesat/OrgCharts" target="_blank" class="layui-btn layui-btn-lg layui-btn-primary layui-border-black"> 去 GitHub 下载 </a>
+                            <blockquote class="layui-elem-quote"> 该扩展组件由第三方用户主动投递，并由其自身进行维护，本站仅做收集。 </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fly-footer"></div>
+    </div>
+    <script src="../../layui/dist/layui.js"></script>
+    <script>
+        layui.cache.page = 'extends';
+        layui.cache.user = {
+            username: '游客',
+            uid: -1,
+            avatar: '../static/images/fly/avatar/default.png',
+            experience: 0,
+            sum: 0,
+            vip: 0,
+            sex: ''
+        };
+        layui.config({
+            version: "111"
+        }).extend({
+            'fly': '../static/lay/modules/fly/index'
+        }).use('fly');
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+
+</html>

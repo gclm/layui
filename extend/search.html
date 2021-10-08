@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>layui 第三方组件平台</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="layui插件,layui组件,layui扩展">
+    <meta name="description" content="layui 扩展组件平台用于收集来自 layui 官方以外的组件，由开发者自己维护。平台的目的是为了释放 layui 官方原创组件的压力，将更具想象力的组件生态开放给社区，让那些有能力有兴趣的开发者也能参与进来，共同完善 layui！">
+    <link rel="stylesheet" href="../t/font_24081_60slu02pimt.css">
+    <link rel="stylesheet" href="../layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../static/css/fly/global.css">
+    <link rel="stylesheet" href="../static/css/global.css">
+</head>
+
+<body>
+    <div class="layui-header header header-extends" style="background-color: #24262F;">
+        <div class="layui-container">
+            <a class="logo" href="../index.html"> <img src="../static/images/layui/logo.png" alt="layui"> </a>
+            <div class="layui-form component" lay-filter="LAY-site-header-component"></div>
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-hide-xs"> <a href="../index.html">框架</a> </li>
+                <li class="layui-nav-item layui-hide-xs layui-this"> <a href="">扩展</a> </li>
+                <li class="layui-nav-item"> <a href="javascript:;">周边</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../alone.html" target="_blank">独立组件</a> </dd>
+                        <dd class="layui-hide-sm layui-show-xs" lay-unselect=""> <a href="">扩展组件</a>
+                            <hr> </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"> <a href="javascript:;">专区</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../user/login/index.html">layuiAdmin</a>
+                            <hr> </dd>
+                        <dd lay-unselect=""> <a href="../user/login/index1.html" target="_blank">LayIM</a> </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="iconfont icon-touxiang" href="../user/login/index2.html"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--[if lt IE 9]>  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <div class="fly-extend-banner">
+        <div class="layui-carousel" id="FLY-extend-banner" data-height="400px">
+            <div carousel-item="">
+                <div style="background-image: url(../upload/2018_8/168_1535351333114_70495.jpg)">
+                    <div></div>
+                </div>
+                <div style="background-image: url(../upload/2018_8/168_1535351313735_71033.jpg)">
+                    <div style="background-color: rgba(0,0,0,.5)">
+                        <a href="../layuiadmin/index.html" target="_blank" class="fly-extend-banner-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="fly-extend-banner-title">layui 第三方组件平台</h1>
+        <form action="/extend/search.html" class="fly-extend-banner-search">
+            <div class="layui-inline"> <input placeholder="搜索 layui 第三方组件" name="kws" autocomplete="off" value="" class="layui-input"> </div><button class="layui-btn"><i class="layui-icon layui-icon-search"></i></button> </form>
+        <div class="fly-extend-banner-release"> <a href="../user/login/index3.html" class="layui-btn layui-btn-lg">发布组件</a> </div>
+    </div>
+    <div class="layui-container">
+        <div class="layui-tab layui-tab-brief fly-extend-tabs">
+            <ul class="layui-tab-title">
+                <li class="layui-this"> <a href="">按最新</a> </li>
+                <li> <a href="order/hot.html">按人气</a> </li>
+            </ul>
+        </div>
+        <ul class="layui-row layui-col-space30" id="card">
+
+        </ul>
+        <div style="padding: 30px 0;display: none">
+            <div style="text-align: center;">
+                <div class="laypage-main"><span class="laypage-curr">1</span><a href="page/2/index.html">2</a><a href="page/3/index.html">3</a><a href="page/4/index.html">4</a><a href="page/5/index.html">5</a><span>…</span><a href="page/7/index.html" class="laypage-last" title="尾页">尾页</a>
+                    <a
+                        href="page/2/index.html" class="laypage-next">下一页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fly-footer"></div>
+    </div>
+    <script src="../layui/dist/layui.js"></script>
+    <script>
+        layui.cache.page = 'extends';
+        layui.cache.user = {
+            username: '游客',
+            uid: -1,
+            avatar: '../static/images/fly/avatar/default.png',
+            experience: 0,
+            sum: 0,
+            vip: 0,
+            sex: ''
+        };
+        layui.config({
+            version: "111"
+        }).extend({
+            'fly': '../static/lay/modules/fly/index'
+        }).use('fly');
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        let list = [
+            {
+                title:"ajaxCascader 异步无限级联选择器 ajaxCascader",
+                info:"最快的入手配置方法，仅需要一个data参数，插件即可正常使用，编写目的主要是完善layui生态中的cascader.",
+                img:"../static/images/fly/avatar/8.jpg",
+                author:"Po**r",
+                path:"uploadx"
+
+            }
+        ]
+        function getQueryVariable(variable){
+               var query = window.location.search.substring(1);
+               var vars = query.split("&");
+               for (var i=0;i<vars.length;i++) {
+                       var pair = vars[i].split("=");
+                       if(pair[0] == variable){return pair[1];}
+               }
+               return(false);
+        }
+        let kws = decodeURI(getQueryVariable("kws"))
+        let temp = `<li class="layui-col-sm12 layui-col-md6">
+                <div class="fly-extend-list layui-card">
+                    <div class="fly-extend-list-header">
+                        <h2 class="fly-extend-title layui-elip"> <a href="#path#/index.html"> #title# </a>
+                            <div class="layui-badge layui-bg-green layui-hide-xs"> #smallTitle# </div>
+                        </h2>
+                        <div class="fly-extend-list-info">
+                            <a href1="/u/27354432/" target="_blank" class="fly-extend-list-user"> <cite class="layui-hide-xs">#author#</cite> <img src="#authorImg#" alt="#author#"> </a>
+                        </div>
+                    </div>
+                    <a href="#path#/index.html" target="_blank">
+                        <div class="fly-extend-list-desc">
+                            <p>#info#</p>
+                        </div>
+                    </a>
+                </div>
+            </li>`;
+        let card = document.getElementById("card");
+        card.innerHTML+=temp;
+        card.innerHTML+=temp;
+        layer.alert("搜索功能暂未添加 待会忙完弄<br>tips:情怀无价")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!-- 
+本站非layui官网 为纪念老版本layui copy出来的一个文档网址
+layui作者贤心 网址 : http://www.layui.com
+ -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Layui - 经典开源模块化前端 UI 框架</title>
+    <meta name="keywords" content="layui,ui,ui框架,前端框架,JS组件">
+    <meta name="description" content="layui 是一套开源的 Web UI 解决方案，其内部采用的是自身经典的模块化规范，并遵循原生 HTML/CSS/JS 的开发方式，极易上手，拿来即用。其外在极简，却又不失饱满的内在，体积轻盈，组件丰盈，从核心代码到使用方法的每一处细节都经过精心雕琢，非常适合网页界面的快速开发。">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="stylesheet" href="layui/dist/css/layui.css" media="all">
+    <link rel="stylesheet" href="static/css/global.css" media="all">
+</head>
+
+<body class="site-home" id="LAY_home" style="background-color: #eee;" data-date="9-24">
+
+
+    <div class="layui-header header header-index" autumn="">
+        <div class="layui-container">
+            <a class="logo" href="">
+                <img src="static/images/layui/logo.png" alt="layui">
+            </a>
+            <div class="layui-form layui-hide-xs component" lay-filter="LAY-site-header-component"></div>
+            <div class="layui-hide-xs site-notice"></div>
+
+            <ul class="layui-nav" id="LAY_NAV_TOP">
+                <li class="layui-nav-item ">
+                    <a href="doc/index.html">文档</a>
+                </li>
+                <li class="layui-nav-item ">
+                    <a href="demo/index.html">示例</a>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <!--<span class="layui-badge-dot" style="left:0; right: auto; margin: -4px 0 0 5px;"></span>-->
+                        周边
+                    </a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd class="layui-hide-sm layui-show-xs" lay-unselect="">
+                            <a href="javascript:;" target="_blank" rel="nofollow">问题反馈</a>
+                            <hr>
+                        </dd>
+
+                        <dd lay-unselect=""><a href="alone.html" target="_blank" lay-unselect="">独立组件</a></dd>
+                        <dd lay-unselect=""><a href="extend/index.html" target="_blank">扩展组件</a></dd>
+                    </dl>
+                </li>
+
+                <div class="layui-footer footer footer-doc"></div>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <div class="site-banner">
+        <div class="site-banner-bg" style="background-image: url(static/images/layui/banner/autumn.jpg); background-size: cover;" autumn="">
+        </div>
+        <div class="site-banner-main">
+            <div class="site-zfj">
+                <i class="layui-icon" style="color: #fff; color: rgba(255,255,255,.6);">&#xe609;</i>
+            </div>
+            <div class="layui-anim site-desc">
+                <p class="web-font-desc">开源模块化前端 UI 框架</p>
+                <cite>由职业前端倾情打造，面向全层次的前后端开发者，易上手开源免费的 Web UI 组件库</cite>
+            </div>
+            <div class="site-download">
+                <a href="static/download/layui/layui-v2.6.8.zip" class="layui-inline site-down" target="_blank">
+                    <cite class="layui-icon">&#xe601;</cite> 立即下载
+                </a>
+            </div>
+            <div class="site-version">
+                <span>当前版本：v<cite class="site-showv">…</cite></span>
+                <span><a href="doc/base/changelog.html" rel="nofollow" target="_blank">更新日志</a></span>
+                <span>下载量：<em class="site-showdowns">2352895+</em></span>
+            </div>
+            <div class="site-banner-other">
+                <a href="https://github.com/sentsin/layui/" target="_blank" rel="nofollow" class="site-star">
+                    <i class="layui-icon">&#xe658;</i> Star <cite id="getStars"></cite>
+                </a>
+
+                <a href="https://gitee.com/sentsin/layui/issues" target="_blank" rel="nofollow" class="site-fork">
+                    新版火速围观
+                </a>
+
+                <a id="layui-link" target="_blank" rel="nofollow" class="site-fork">
+                    layui在线引用
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="layui-container">
+
+
+        <ul class="layui-row layui-col-space30 site-idea">
+            <li class="layui-col-md4">
+                <div>
+                    <fieldset class="layui-elem-field layui-field-title">
+                        <legend>返璞归真</legend>
+                        <p>身处在前端社区的繁荣之下，我们都在有意或无意地追逐。而 layui 偏偏回望当初，奔赴在返璞归真的漫漫征途，自信并勇敢着，追寻于原生态的书写指令，试图以最简单的方式诠释高效。</p>
+                    </fieldset>
+                </div>
+            </li>
+            <li class="layui-col-md4">
+                <div>
+                    <fieldset class="layui-elem-field layui-field-title">
+                        <legend>双面体验</legend>
+                        <p>拥有双面的不仅是人生，还有 layui。一面极简，一面丰盈。极简是视觉所见的外在，是开发所念的简易。丰盈是倾情雕琢的内在，是信手拈来的承诺。一切本应如此，简而全，双重体验。</p>
+                    </fieldset>
+                </div>
+            </li>
+            <li class="layui-col-md4">
+                <div>
+                    <fieldset class="layui-elem-field layui-field-title">
+                        <legend>星辰大海</legend>
+                        <p>如果眼下还是一团零星之火，那运筹帷幄之后，迎面东风，就是一场烈焰燎原吧，那必定会是一番尽情的燃烧。待，秋风萧瑟时，散作满天星辰，你看那四季轮回
+                            <!--海天相接-->，正是 layui 不灭的执念。</p>
+                    </fieldset>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="layui-footer footer footer-index">
+
+    </div>
+    <script>
+        window.global = {
+            pageType: 'index',
+            preview: function() {
+                var preview = document.getElementById('LAY_preview');
+                return preview ? preview.innerHTML : '';
+            }()
+        };
+    </script>
+    <script async="" src="pagead/js/adsbygoogle.js"></script>
+    <div class="site-tree-mobile layui-hide">
+        <i class="layui-icon layui-icon-spread-left"></i>
+    </div>
+    <div class="site-mobile-shade"></div>
+
+    <script src="layui/dist/layui.js"></script>
+    <script>
+        layui.config({
+            base: '../static/lay/modules/layui/',
+            version: '1632428048260'
+        }).use('global');
+    </script>
+
+    <script>
+        setTimeout(() => {
+            layer.alert('本站为layui用户为纪念layui创建的永久镜像站<br>本站内容与layui团队无关,本站仅提供文档演示和下载', {
+              time: 3*1000
+              ,success: function(layero, index){
+                var timeNum = this.time/1000, setText = function(start){
+                  layer.title((start ? timeNum : --timeNum) + ' 秒后关闭', index);
+                };
+                setText(!0);
+                this.timer = setInterval(setText, 1000);
+                if(timeNum <= 0) clearInterval(this.timer);
+              }
+              ,end: function(){
+                clearInterval(this.timer);
+              }
+            });
+        }, 3000);
+        document.getElementById("layui-link").onclick=()=>{
+            layer.alert(`
+            js 在线链接:<br>
+            https://layui.11dz.cn/layui-v2.6.8/layui/layui.js<br>
+            css 在线链接:<br>
+            https://layui.11dz.cn/layui-v2.6.8/layui/css/layui.css<br>
+            `, {
+              title:"永久极速外链地址(v2.6.8)",
+              skin: 'layui-layer-molv' //样式类名
+              ,closeBtn: 0
+              ,anim: parseInt(Math.random()*8,10)+1
+            });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>drawer 抽屉组件 drawer - layui 第三方组件平台</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="侧边栏抽屉功能">
+    <link rel="stylesheet" href="../../t/font_24081_60slu02pimt.css">
+    <link rel="stylesheet" href="../../layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../static/css/fly/global.css">
+    <link rel="stylesheet" href="../../static/css/global.css">
+</head>
+
+<body>
+    <div class="layui-header header header-extends" style="background-color: #24262F;">
+        <div class="layui-container">
+            <a class="logo" href="../../index.html"> <img src="../../static/images/layui/logo.png" alt="layui"> </a>
+            <div class="layui-form component" lay-filter="LAY-site-header-component"></div>
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-hide-xs"> <a href="../../index.html">框架</a> </li>
+                <li class="layui-nav-item layui-hide-xs layui-this"> <a href="../index.html">扩展</a> </li>
+                <li class="layui-nav-item"> <a href="javascript:;">周边</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../alone.html" target="_blank">独立组件</a> </dd>
+                        <dd class="layui-hide-sm layui-show-xs" lay-unselect=""> <a href="../index.html">扩展组件</a>
+                            <hr>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"> <a href="javascript:;">专区</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../user/login/index.html">layuiAdmin</a>
+                            <hr>
+                        </dd>
+                        <dd lay-unselect=""> <a href="../../user/login/index1.html" target="_blank">LayIM</a> </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="iconfont icon-touxiang" href="../../user/login/index2.html"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--[if lt IE 9]>  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <div class="fly-extend-banner fly-extend-banner-sm">
+        <div class="layui-carousel" id="FLY-extend-banner" data-height="200px">
+            <div carousel-item="">
+                <div style="background-image: url(../../upload/2018_8/168_1535373858670_8825.jpg)">
+                    <div style="background: rgba(0,0,0,.6)"></div>
+                </div>
+            </div>
+        </div>
+        <h1 class="fly-extend-banner-title">layui 第三方组件平台</h1>
+        <div class="fly-extend-banner-release"> <a href="../index.html" class="layui-btn layui-btn-lg">返回首页</a> <a href="../../user/login/index3.html" class="layui-btn layui-btn-lg">发布组件</a> </div>
+    </div>
+    <div class="fly-extend-detail layui-card">
+        <div class="layui-container">
+            <div class="fly-extend-list-header">
+                <h1 class="fly-extend-title layui-elip"> <a>drawer 抽屉组件</a> <span class="layui-badge layui-bg-green layui-hide-xs">drawer</span> </h1>
+                <div class="fly-extend-list-info">
+                    <a href="https://fly.layui.com/u/45030216" target="_blank" class="fly-extend-list-user" title="发布者"> <cite class="layui-hide-xs">Je**8</cite> <img src="../../g7.jpg" alt="Je**8"> </a>
+                </div>
+            </div>
+            <blockquote class="fly-extend-list-desc layui-elem-quote">
+                <p>侧边栏抽屉功能</p>
+            </blockquote>
+            <div class="fly-extend-list-bottom"> <span class="layui-inline">创建：2021-3-19 </span>
+                <div class="layui-btn-container layui-extend-doc-edit"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-container">
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-sm3 layui-col-md2">
+                <div class="layui-card">
+                    <ul class="fly-extend-doc-nav" lay-filter="extend-doc-nav">
+                        <li class="layui-this" lay-id="doc"> <a href="javascript:;"><i
+                                    class="iconfont icon-wendang"></i> 文档</a> </li>
+                        <li lay-id="download"> <a href="javascript:;"><i class="iconfont icon-xiazai"></i> 下载</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layui-col-sm9 layui-col-md10">
+                <div class="layui-card fly-extend-doc layui-show">
+                    <div class="layui-card-header">
+                        <h3 class="layui-inline layui-this">文档</h3>
+                    </div>
+                    <div class="layui-card-body detail-body photos layui-text"> 安装教程<br>
+                        <pre>layui.config({<br>    base: &#39;/js/&#39;, //拓展模块的根目录<br>})<br>.extend({<br>    drawer: &#39;/drawer/drawer&#39;<br>});</pre> 使用说明
+                        <br>
+                        <pre>layui.drawer.render({<br>	title: &#39;test&#39;,  //标题<br>	offset: &#39;r&#39;,    //r:抽屉在右边、l:抽屉在左边<br>        top: 30,        //抽屉顶部距离，默认0<br>        bottom: 30,     //抽屉底部距离，默认0<br>	width: &quot;600px&quot;, //r、l抽屉可以设置宽度<br>	content: &quot;&lt;div&gt;aaaa&lt;/div&gt;&quot;,<br>});<br>layui.drawer.render({<br>	title: &#39;test&#39;,<br>	offset: &#39;b&#39;,     //b:抽屉在底部、t:抽屉在顶部<br>	height: &quot;500px&quot;, //b、t抽屉可以设置高度<br>	content: &quot;&lt;div&gt;aaaa&lt;/div&gt;&quot;,<br>});<br><br>//事件，跟layer的事件一致<br>layui.drawer.render({<br>	title: &#39;test&#39;,  //标题<br>	offset: &#39;r&#39;,    //r:抽屉在右边、l:抽屉在左边<br>	width: &quot;600px&quot;, //r、l抽屉可以设置宽度<br>	content: $(&quot;#highSearchToolBar&quot;).html(),<br>        btn: [&#39;&lt;i class=&quot;layui-icon&quot;&gt;&lt;/i&gt;搜索&#39;, &#39;重置&#39;],<br>        success = function (layero, index) {<br>                <br>        },<br>        btn1: function (index, layero) {<br>            <br>        },<br>        btn2: function (index, layero) {<br>             $(layero).find(&quot;form&quot;)[0].reset();//重置<br>             return false;   <br>        }<br>});</pre>                        效果图
+                        <br><img src="../../upload/2021_2/45030216_1612429330834_58628.png"> <br><img src="../../upload/2021_2/45030216_1612429338594_93809.png">
+                    </div>
+                </div>
+                <div class="layui-card fly-extend-doc">
+                    <div class="layui-card-header">
+                        <h3 class="layui-inline layui-this">下载</h3>
+                    </div>
+                    <div class="layui-card-body detail-body layui-text">
+                        <div class="layui-btn-container"> <a href="https://cdn.layui.com/extend/45030216_1612429468674_41035.zip" target="_blank" class="layui-btn layui-btn-lg layui-btn-primary"> 立即下载 </a> <a href="https://gitee.com/fkdexq/LayUI.drawer"
+                                target="_blank" class="layui-btn layui-btn-lg layui-btn-primary layui-border-red"> 去码云下载 </a>
+                            <blockquote class="layui-elem-quote"> 该扩展组件由第三方用户主动投递，并由其自身进行维护，本站仅做收集。 </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fly-footer"></div>
+    </div>
+    <script src="../../layui/dist/layui.js"></script>
+    <script>
+        layui.cache.page = 'extends';
+        layui.cache.user = {
+            username: '游客',
+            uid: -1,
+            avatar: '../static/images/fly/avatar/default.png',
+            experience: 0,
+            sum: 0,
+            vip: 0,
+            sex: ''
+        };
+        layui.config({
+            version: "111"
+        }).extend({
+            'fly': '../static/lay/modules/fly/index'
+        }).use('fly');
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+
+</html>

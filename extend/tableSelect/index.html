@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>tableSelect 下拉表格选择器 tableSelect - layui 第三方组件平台</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="用于庞大数据选择，支持 layui 原生 table 组件的所有功能/自定义关键词搜索/双击选择/默认赋值/分页选中">
+    <link rel="stylesheet" href="../../t/font_24081_60slu02pimt.css">
+    <link rel="stylesheet" href="../../layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../static/css/fly/global.css">
+    <link rel="stylesheet" href="../../static/css/global.css">
+</head>
+
+<body>
+    <div class="layui-header header header-extends" style="background-color: #24262F;">
+        <div class="layui-container">
+            <a class="logo" href="../../index.html"> <img src="../../static/images/layui/logo.png" alt="layui"> </a>
+            <div class="layui-form component" lay-filter="LAY-site-header-component"></div>
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-hide-xs"> <a href="../../index.html">框架</a> </li>
+                <li class="layui-nav-item layui-hide-xs layui-this"> <a href="../index.html">扩展</a> </li>
+                <li class="layui-nav-item"> <a href="javascript:;">周边</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../alone.html" target="_blank">独立组件</a> </dd>
+                        <dd class="layui-hide-sm layui-show-xs" lay-unselect=""> <a href="../index.html">扩展组件</a>
+                            <hr>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"> <a href="javascript:;">专区</a>
+                    <dl class="layui-nav-child layui-nav-child-c">
+                        <dd lay-unselect=""> <a href="../../user/login/index.html">layuiAdmin</a>
+                            <hr>
+                        </dd>
+                        <dd lay-unselect=""> <a href="../../user/login/index1.html" target="_blank">LayIM</a> </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="iconfont icon-touxiang" href="../../user/login/index2.html"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--[if lt IE 9]>  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <div class="fly-extend-banner fly-extend-banner-sm">
+        <div class="layui-carousel" id="FLY-extend-banner" data-height="200px">
+            <div carousel-item="">
+                <div style="background-image: url(../../upload/2018_8/168_1535373858670_8825.jpg)">
+                    <div style="background: rgba(0,0,0,.6)"></div>
+                </div>
+            </div>
+        </div>
+        <h1 class="fly-extend-banner-title">layui 第三方组件平台</h1>
+        <div class="fly-extend-banner-release"> <a href="../index.html" class="layui-btn layui-btn-lg">返回首页</a> <a href="../../user/login/index3.html" class="layui-btn layui-btn-lg">发布组件</a> </div>
+    </div>
+    <div class="fly-extend-detail layui-card">
+        <div class="layui-container">
+            <div class="fly-extend-list-header">
+                <h1 class="fly-extend-title layui-elip"> <a>tableSelect 下拉表格选择器</a> <span class="layui-badge layui-bg-green layui-hide-xs">tableSelect</span> </h1>
+                <div class="fly-extend-list-info">
+                    <a href="https://fly.layui.com/u/12559680" target="_blank" class="fly-extend-list-user" title="发布者"> <cite class="layui-hide-xs">sa**8</cite> <img src="../../avatar/12559680.jpg" alt="sa**8"> </a>
+                </div>
+            </div>
+            <blockquote class="fly-extend-list-desc layui-elem-quote">
+                <p>用于庞大数据选择，支持 layui 原生 table 组件的所有功能/自定义关键词搜索/双击选择/默认赋值/分页选中</p>
+            </blockquote>
+            <div class="fly-extend-list-bottom"> <span class="layui-inline">更新：2018-10-18 </span> <span class="layui-inline">创建：2018-9-3 </span>
+                <div class="layui-btn-container layui-extend-doc-edit"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-container">
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-sm3 layui-col-md2">
+                <div class="layui-card">
+                    <ul class="fly-extend-doc-nav" lay-filter="extend-doc-nav">
+                        <li class="layui-this" lay-id="doc"> <a href="javascript:;"><i
+                                    class="iconfont icon-wendang"></i> 文档</a> </li>
+                        <li lay-id="download"> <a href="javascript:;"><i class="iconfont icon-xiazai"></i> 下载</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layui-col-sm9 layui-col-md10">
+                <div class="layui-card fly-extend-doc layui-show">
+                    <div class="layui-card-header">
+                        <h3 class="layui-inline layui-this">文档</h3>
+                    </div>
+                    <div class="layui-card-body detail-body photos layui-text"> 演示地址: <a href="https://lolicode.gitee.io/layui_component_tableselect/" target="_blank" rel="nofollow">https://lolicode.gitee.io/layui_component_tableselect/</a>
+                        <br><img src="../../upload/2018_9/12559680_1535947472937_27669.png"> <br>
+                        <pre>var tableSelect = layui.tableSelect;<br>tableSelect.render({<br>	elem: &#39;#demo&#39;,	//定义输入框input对象<br>	checkedKey: &#39;id&#39; //表格的唯一建值，非常重要，影响到选中状态 必填<br>	searchKey: &#39;keyword&#39;,	//搜索输入框的name值 默认keyword<br>	searchPlaceholder: &#39;关键词搜索&#39;,	//搜索输入框的提示文字 默认关键词搜索<br>	table: {	//定义表格参数，与LAYUI的TABLE模块一致，只是无需再定义表格elem<br>		url:&#39;&#39;,<br>		cols: [[]]<br>	},<br>	done: function (elem, data) {<br>	//选择完后的回调，包含2个返回值 elem:返回之前input对象；data:表格返回的选中的数据 []<br>	//拿到data[]后 就按照业务需求做想做的事情啦~比如加个隐藏域放ID...<br>	}<br>})</pre>                        和其他众多的组件使用方式一样 需要render一下~
+                    </div>
+                </div>
+                <div class="layui-card fly-extend-doc">
+                    <div class="layui-card-header">
+                        <h3 class="layui-inline layui-this">下载</h3>
+                    </div>
+                    <div class="layui-card-body detail-body layui-text">
+                        <div class="layui-btn-container"> <a href="https://cdn.layui.com/extend/12559680_1539843574992_26082.rar" target="_blank" class="layui-btn layui-btn-lg layui-btn-primary"> 立即下载 </a> <a href="https://gitee.com/lolicode/layui_component_tableselect"
+                                target="_blank" class="layui-btn layui-btn-lg layui-btn-primary layui-border-red"> 去码云下载
+                            </a>
+                            <blockquote class="layui-elem-quote"> 该扩展组件由第三方用户主动投递，并由其自身进行维护，本站仅做收集。 </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fly-footer"></div>
+    </div>
+    <script src="../../layui/dist/layui.js"></script>
+    <script>
+        layui.cache.page = 'extends';
+        layui.cache.user = {
+            username: '游客',
+            uid: -1,
+            avatar: '../static/images/fly/avatar/default.png',
+            experience: 0,
+            sum: 0,
+            vip: 0,
+            sex: ''
+        };
+        layui.config({
+            version: "111"
+        }).extend({
+            'fly': '../static/lay/modules/fly/index'
+        }).use('fly');
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+
+</html>
